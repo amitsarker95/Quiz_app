@@ -17,7 +17,7 @@ class Result extends StatelessWidget {
     }else if(finalScore <= 100){
       resultText ='You\'r score is $finalScore';
     }else{
-      resultText = 'You\'r score is average';
+      resultText = 'You\'r score is average $finalScore';
     }
     return resultText;
   }

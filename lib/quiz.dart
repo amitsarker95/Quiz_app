@@ -4,13 +4,13 @@ import 'answer_store.dart';
 
 class QuizStore extends StatelessWidget {
   final List<Map<String, Object>> questions;
-  final int  questionIndex;
+   int  questionIndex;
   final Function  answerQuestion;
 
    QuizStore(
-      {@required this.questions,
-      @required this.answerQuestion,
-      @required this.questionIndex}) ;
+      {required this.questions,
+      required this.answerQuestion,
+      required this.questionIndex}) ;
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class QuizStore extends StatelessWidget {
           height: 50,
         ),
         QuestionStore(
-          questions[questionIndex]['Question'] as String,
+          questions[questionIndex]['Question'] as String
         ),
         const SizedBox(
           height: 10,
