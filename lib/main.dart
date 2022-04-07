@@ -178,7 +178,7 @@ class _QuizAppState extends State<QuizApp> {
                 questions: _questions,
               )
             : Result(
-          _totalScore,
+          _totalScore,_backQuiz
         ),
       ),
     );
